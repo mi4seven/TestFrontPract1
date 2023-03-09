@@ -33,6 +33,7 @@
       imgTreasure.style.left = treasureX + 'px';
       imgTreasure.style.top = treasureY + 'px';
 
+      hint.innerHTML = 'Click on map to find the treasure!';
       btnRestart.style.display = "none";
       imgMap.style.pointerEvents = "auto";
       imgTreasure.style.transform = 'scale(3)';
