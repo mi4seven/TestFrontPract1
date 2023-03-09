@@ -37,7 +37,6 @@
       imgMap.style.pointerEvents = "auto";
       imgTreasure.style.transform = 'scale(3)';
       imgTreasure.style.transition = 'transform 1s ease';
-      //divTopPanel.style.color = "black";
       imgTreasure.style.zIndex = 0;      
       imgMap.style.zIndex = 1;
     }
