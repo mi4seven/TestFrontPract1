@@ -1,6 +1,10 @@
     * {
-      box-sizing: border-panel;
+      box-sizing: border-box;
       font-family: 'FontAwesome', 'Poppins', sans-serif;
+    }
+
+    body {
+      margin: 0;
     }
 
     .game-panel {
