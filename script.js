@@ -33,7 +33,12 @@
       imgTreasure.style.left = treasureX + 'px';
       imgTreasure.style.top = treasureY + 'px';
 
+      /* Read result from local storage
+      hint.innerHTML = localStorage.getItem('clickNum');
+      */
+      
       hint.innerHTML = 'Click on map to find the treasure!';
+     
       btnRestart.style.display = "none";
       imgMap.style.pointerEvents = "auto";
       imgTreasure.style.transform = 'scale(3)';
@@ -57,6 +62,10 @@
       imgMap.style.pointerEvents = "none";           
       color = "red";
       hintText = "Treasure found! Steps taken: " + clickNum; 
+
+      /* Write result to local storage
+      localStorage.setItem('clickNum', clickNum);
+      */      
     }
 
     function showResult(dist) {
@@ -101,6 +110,5 @@
       showResult(distance);
     }
 
-    imgMap.addEventListener("click", nextStep);
-
-    intitMap();
+imgMap.addEventListener("click", nextStep);
+intitMap();
